@@ -40,7 +40,8 @@
     "htmlcoin-lib": "git://github.com/HTMLCOIN/htmlcoin-lib.git#master",
     "request": "^2.83.0",
     "web3": "^0.18.4",
-    "firebase-admin": "^5.8.2"
+    "firebase-admin": "^5.8.2",
+    "pushy": "^2.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -6,10 +6,20 @@ const addressDeviceTokenSchema = new mongoose.Schema({
         required: true,
         index: true
     },
+    platform: {
+        type: String,
+        required: false,
+        index: false
+    },
     deviceToken: {
         type: String,
-        required: true,
-        index: true
+        required: false,
+        index: false
+    },
+    pushyDeviceToken: {
+        type: String,
+        required: false,
+        index: false
     }
 }, {
     timestamps: {

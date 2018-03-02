@@ -24,7 +24,8 @@ Add this configuration to `htmlcoincore-node.json`
         "user": "",
         "password": ""
       },
-      "firebaseConfigPath": ""
+      "firebaseConfigPath": "",
+      "pushySecretApiKey": ""
     }
 }
 ```
