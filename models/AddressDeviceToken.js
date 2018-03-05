@@ -20,6 +20,11 @@ const addressDeviceTokenSchema = new mongoose.Schema({
         type: String,
         required: false,
         index: false
+    },
+    isPlayServicesAvailable: {
+        type: Boolean,
+        required: false,
+        index: false
     }
 }, {
     timestamps: {
