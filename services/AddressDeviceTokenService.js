@@ -44,7 +44,7 @@ AddressDeviceTokenService.prototype.createOrUpdatePushyDeviceToken = function(ad
                         });
 }
 
-AddressDeviceTokenService.prototype.deletePushyDeviceToken = function(addr, token, platform, next) {
+AddressDeviceTokenService.prototype.deletePushyDeviceToken = function(addr, next) {
     var self = this;
     return self.addressDeviceTokenRepository.createOrUpdateAddressDeviceToken({
                             address: addr,
