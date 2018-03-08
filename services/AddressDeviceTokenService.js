@@ -19,6 +19,18 @@ AddressDeviceTokenService.prototype.createOrUpdateDeviceToken = function(addr, t
                         });
 }
 
+AddressDeviceTokenService.prototype.getDevicesTokenByAddresses = function(addresses, next) {
+    var self = this;
+    self.addressDeviceTokenRepository.findDevicesTokenByAddresses(addresses, function(err, res){
+        if (res != null) {
+            return next(res);
+        } else {
+            return next(null);
+        }
+
+    });
+}
+
 AddressDeviceTokenService.prototype.getDeviceTokenByAddress = function(addr, next) {
     var self = this;
     self.addressDeviceTokenRepository.findDeviceTokenByAddress(addr, function(err, res){

@@ -17,4 +17,13 @@ AddressDeviceTokenRepository.prototype.findDeviceTokenByAddress = function (addr
     });
 };
 
+AddressDeviceTokenRepository.prototype.findDevicesTokenByAddresses = function (addresses, next) {
+    return AddressDeviceToken.find()
+        .where("address")
+        .in(addresses)
+        .exec(function(err, row) {
+            return next(err, row);
+        });
+};
+
 module.exports = AddressDeviceTokenRepository;
