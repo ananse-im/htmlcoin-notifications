@@ -1,7 +1,7 @@
 {
   "name": "htmlcoin-notification",
   "description": "A push notification service for HTMLCOINCORE Node.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "https://github.com/HTMLCOIN/htmlcoin-notifications.git",
   "contributors": [],
   "bugs": {
